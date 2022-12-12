@@ -29,14 +29,14 @@ class Grass {};
 
 int main ()
 {
-	Sun sun { false };
+	Sun sun { true };
 	Frog frog;
 	std::cout<< std::boolalpha << "Is frog sleap? " 
-		 <<  frog.is_sleap (sun);			//it will print true
+		 <<  frog.is_sleap (sun);			//it will print false
 	std::cout<< std::boolalpha << "\nIs frog eat? " 
-		 <<  frog.is_eat (sun);			// it will print false
+		 <<  frog.is_eat (sun);			// it will print true
 	Tree tree;
 	std::cout<< std::boolalpha << "\nDoes the tree photosintesize? " 
-		 << tree.photosintesis (sun);		// it will print false
+		 << tree.photosintesis (sun);		// it will print true
 return 0;
 }
