@@ -1,4 +1,4 @@
-/* simulat_picture.cpp
+/* simulate_picture.cpp
 **/
 #include <iostream>
 class Sun
@@ -29,15 +29,14 @@ class Grass {};
 
 int main ()
 {
-	Sun sun;
-        Sun sun2 { false };
+	Sun sun { false };
 	Frog frog;
 	std::cout<< std::boolalpha << "Is frog sleap? " 
-		 <<  frog.is_sleap (sun2);			//it will print true
+		 <<  frog.is_sleap (sun);			//it will print true
 	std::cout<< std::boolalpha << "\nIs frog eat? " 
-		 <<  frog.is_eat (sun2);			// it will print false
+		 <<  frog.is_eat (sun);			// it will print false
 	Tree tree;
 	std::cout<< std::boolalpha << "\nDoes the tree photosintesize? " 
-		 << tree.photosintesis (sun2);		// it will print false
+		 << tree.photosintesis (sun);		// it will print false
 return 0;
 }
